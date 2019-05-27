@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eeeeee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 1080px;
+    margin: auto;
+    box-shadow: 30px 0 40px rgba(0, 0, 0, 0.3), -30px 0 40px rgba(0, 0, 0, 0.3);
+}
+
+#landing {
+    background: #ffffff;
+}
+
+p {
+    text-align: left;
+    text-indent: 25px;
+    padding: 0 20px;
+}
+
+/* ---------- Text section ---------- */
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#landing-text h2 {
+    color: #888888;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: #888888 1px solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333333;
+    transition: background 800ms ease;
+}
+
+.btn:hover {
+    background-color: #f4f4f4;
+}
+
+/* ---------- Photo section ---------- */
+#landing-image {
+    background-image: url("../img/007_logo.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0 1 60vw;
+    height: 50vh;
+    margin: 0;
+}
+
+/* ---------- Gallery section ---------- */
+#header {
+    padding: 1.2rem;
+    text-align: center;
+    background-color: #888888;
+    color: #ffffff;
+}
+
+#header h2 {
+    border-left: dotted 3px #ffffff;
+    border-right: dotted 3px #ffffff;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.caption {
+    padding: 0.2rem 0.8rem 2.5rem 0.8rem;
+    text-align: center;
+}
+
+/* ---------- Footer section ---------- */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333333;
+}
+
+footer h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* ---------- Screen sizes 100px and up ---------- */
+@media (min-width: 100px) {
+    #landing {
+        height: 100%;
+    }
+
+    h1, h2 {
+        padding-left: 20px;
+    }
+
+    #landing-text, #landing-image {
+        height: 50vh;
+    }
+}
+
+/* ---------- Screen sizes 500px and up ---------- */
+@media (min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+    #landing-text, #landing-image {
+        height: 100vh;
+    }
+}
+
+/* ---------- Screen sizes 700px and up ---------- */
+@media (min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
